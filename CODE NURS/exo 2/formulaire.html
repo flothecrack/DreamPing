@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- partie invisible -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 20px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1,
+        h3 {
+            background: white;
+            text-align: center;
+        }
+
+        label,
+        input,
+        select {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- corps de la page début du contenu qui sera affiché -->
+
+    <h1>Votre réservation d'hôtel</h1> <!-- Titre de niveau 1 -->
+    <h3>* champs obligatoires </h3> <!-- Titre de niveau 3 (plus petit) -->
+
+    <!-- début du formulaire -->
+    <form method="GET">
+    <label for="surname">Votre nom*: <br>
+        <input type="text" name="surname" id="surname"
+        placeholder="nom de famille" required
+    </label>
+        <br>
+    <label for="firstname">Votre prénom*: <br>
+        <input type="text" name="firstname" id="firstname"
+        placeholder="prénom" required
+    </label>
+        <br>
+    <label for="tél">Numéro de téléphone*: <br>
+        <input type="text" name="tél" id="tél"
+        placeholder="téléphone" required
+    </label>
+        <br>
+    </label for="e-mail">Adresse mail*: <br>
+            <input type="text" name="e-mail" id="e-mail"
+            placeholder="e-mail" required
+    </label>
+        <br>
+    </label for="villes">Sélectionner la ville*: <br>
+            <select id="villes" name="villes"
+            <br>      
+                <option value="bailleul">bailleul</option>
+                <option selected value="hazebrouck">hazebrouck</option>
+                <option value="steenvoorde">steenvoorde</option>
+                <option value="armentieres">armentieres</option>
+                <option value="lille">lille</option>
+</select><br>
+<label for="date">Date d'arrivée*:<br>
+    <input type="date" name="fname" value="jj/mm/aaaa" id="choix5"><br>
+</label>
+
+<label for="nombre">Nombre de personne(s)*:<br>
+    <input type="texte" name="fname" value="" id="choix5"<br>
+</label>
+<br>
+<label for="options">Vos options :</label><br>
+<label for="clim">Climatisation
+    <input type="checkbox" name="options" value="clim" id="clim">
+</label>
+    <label for="minibar">Mini bar
+        <input type="checkbox" name="options" value="minibar" id="minibar">
+</label>
+    <label for="jacuzzi">Jacuzzi
+        <input type="checkbox" name="options" value="jacuzzi" id="jacuzzi">
+</label>
+<br>
+<textarea rows="10" cols="30" placeholder="Ajouter un commentaire."></textarea><br>
+<label for="nombre">Acceptation des Conditions Générales de Ventes (CGV):<br>
+    <input type="radio" name="fav_language" value="html" id="html">J'accepte</label>
+    <input type="radio" name="fav_language" value="html" id="html">Je refuse</label><br>
+    <input type="submit" value="Envoyer ma demande">
+
+</label>
+
+    </form> <!--  fin du formulaire -->
+</body> <!-- fin du contenu de la page -->
+
+</html>

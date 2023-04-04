@@ -1,0 +1,82 @@
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color:blue;
+    text-align: center;
+}
+
+h1, h2, h3, figcaption {
+    text-align: center;
+}
+
+hr {
+    background-color:green;
+    border: 2px solid green;
+    height: 2px;
+}
+
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+main {
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+p {
+    text-align: justify;
+}
+
+p::first-letter {
+    font-size: 3rem;
+    color: antiquewhite;
+    margin-right: 1rem;
+    float: left;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: beige;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type="submit"]:hover {
+    color: blueviolet;
+    background-color: azure;
+}
+
+body {
+    background-image: url(pexels-kassandre-pedro-15843151.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.last_hr{
+    margin-top: 25px;
+}
+
